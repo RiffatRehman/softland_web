@@ -1,0 +1,356 @@
+/* Navbar custom style */
+.navbar-custom {
+  background-color: #0f3979 !important; /* Bootstrap blue */
+}
+
+.navbar-custom .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+  color: white !important;
+  margin-right: 1rem;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffdd57 !important; /* hover color */
+}
+
+.navbar-custom .nav-dropdown .dropdown-menu {
+  background-color: #0d6efd; /* dropdown background */
+}
+
+.navbar-custom .nav-dropdown .dropdown-item {
+  color: white;
+}
+
+.navbar-custom .nav-dropdown .dropdown-item:hover {
+  background-color: #0056b3;
+}
+ 
+/* Initial solid navbar */
+.navbar-custom {
+  background-color: #0f3979 !important;
+  transition: all 0.4s ease;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .nav-dropdown .dropdown-item {
+  color: white !important;
+}
+
+/* Transparent navbar on scroll */
+.navbar-custom.navbar-transparent {
+  background-color: rgba(15, 57, 121, 0.2) !important; /* semi-transparent */
+  box-shadow: none;
+}
+
+.navbar-custom.navbar-transparent .nav-link,
+.navbar-custom.navbar-transparent .navbar-brand,
+.navbar-custom.navbar-transparent .nav-dropdown .dropdown-item {
+  color: white !important; /* text stays white, adjust if needed */
+}
+
+/* Smooth transition */
+.navbar-custom,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  transition: all 0.4s ease;
+}
+
+
+/* Hero Section */
+.hero-section {
+  padding: 100px 0;
+  background-image: url('../assets/hero_bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.hero-text, .hero-images {
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
+/* Text styling */
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Hero buttons */
+.hero-buttons .hero-btn {
+  margin-right: 15px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .hero-btn:hover {
+  background: white;
+  color: #0d6efd;
+  border-color: white;
+}
+
+/* Right side overlapping images */
+/* Front phone */
+.hero-images .img1 { 
+  width: 250px; 
+  position: relative; /* front image relative */
+  z-index: 2; 
+  left: 30%; 
+  
+}
+
+.hero-images .img2 { 
+  width: 250px; 
+  position: absolute; /* back image absolute for overlap */
+  left: 15%; 
+  z-index: 1; 
+  opacity: 0.8; 
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .hero-images .img1 {
+    width: 200px;
+    left: 20%;
+  }
+  .hero-images .img2 {
+    width: 200px;
+    top: 0;
+    left: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  .hero-images .img1 {
+    width: 180px;
+    left: 15%;
+  }
+  .hero-images .img2 {
+    width: 180px;
+    top: 0;
+    left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-buttons .hero-btn {
+    margin: 5px 0;
+  }
+  .hero-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .hero-images .img1, .hero-images .img2 {
+    width: 150px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 -20px; /* slight overlap */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  .hero-images .img1, .hero-images .img2 {
+    width: 120px;
+    margin: 0 -15px;
+  }
+}
+
+  .hero-buttons .hero-btn {
+    margin-bottom: 10px;
+  }
+ /* About Us button */
+.btn-about {
+  background-color: #559bcc;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-about:hover {
+  filter: blur(1px);
+  background-color: #4682b4; /* thoda dark hover */
+  color: white;
+}
+
+/* Read More button */
+.btn-readmore {
+  background: transparent;
+  color: #559bcc;
+  border: 2px solid #559bcc;
+  padding: 0.7rem 2.5rem; /* lamba aur bada button */
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-readmore:hover {
+  background-color: #559bcc;
+  color: white;
+  border-color: #559bcc;
+}
+
+/* Arrow icon */
+.arrow-icon {
+  margin-left: 10px;
+  font-size: 1.3rem; /* arrow thoda bara */
+}
+
+/* Cards */
+.about-cards .about-card {
+  border: none;
+  background: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-cards .about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Icon round wrapper */
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white; /* initial circle color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  border: 2px solid #559bcc; /* optional border to show circle clearly */
+}
+
+/* Hover effect */
+.icon-wrapper:hover {
+  background-color: #559bcc; /* circle fills with primary color */
+  transform: scale(1.1);
+}
+
+/* FontAwesome icon */
+.icon-fa {
+  color: #559bcc; /* initial icon color */
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Change icon color on hover */
+.icon-wrapper:hover .icon-fa {
+  color: white;
+}
+
+/* About button */
+.btn-about {
+  color: #559bcc !important;       /* initial text color */
+  background: transparent !important;
+  border: 2px solid #559bcc !important;
+  transition: all 0.3s ease;
+}
+
+.btn-about:hover {
+  color: #559bcc !important;        /* text stays same */
+  text-shadow: 0 0 8px #559bcc;     /* glow / blur effect */
+  transform: scale(1.05);           /* optional slight zoom */
+  background: transparent !important;
+}
+
+/* Read More button */
+.btn-readmore {
+  color: white !important;
+  background: #559bcc !important;   /* initial background */
+  border: 2px solid #559bcc !important;
+  transition: all 0.3s ease;
+}
+
+.btn-readmore:hover {
+  background: #559bcc !important;   /* keep same background */
+  color: white !important;          /* text stays white */
+  filter: brightness(1.2) blur(1px); /* slight hover blur */
+  transform: scale(1.03);           /* optional slight zoom */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-text h2 {
+    text-align: center;
+  }
+  .about-text p {
+    text-align: center;
+  }
+  .about-cards {
+    margin-top: 30px;
+  }
+  .btn-readmore, .btn-about {
+    display: block;
+    margin: 10px auto;
+  }
+}
