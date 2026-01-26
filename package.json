@@ -2,7 +2,7 @@
   "name": "softland",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RiffatRehman.github.io/softland_web",
+ 
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",

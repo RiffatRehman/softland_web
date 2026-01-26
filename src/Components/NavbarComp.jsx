@@ -29,7 +29,7 @@ const NavbarComp = () => {
       fixed="top"
       className={`navbar-custom ${navbarTransparent ? 'navbar-transparent' : ''}`}
     >
-      <Container xxl>
+      <Container xxl="true">
         <Navbar.Brand as={HashLink} to="/#home">SoftLand</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

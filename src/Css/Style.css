@@ -354,3 +354,136 @@
     margin: 10px auto;
   }
 }
+/* Card size */
+.softland-card {
+  width: 30rem;           /* width aur bada kar diya */
+  height: auto;           /* content ke hisaab se adjust ho jaye */
+  min-height: 40rem;      /* optional minimum height */
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.softland-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.15);
+}
+
+/* Image inside card */
+.softland-card img {
+  width: 100%;
+  max-height: 250px;      /* image height control */
+  object-fit: cover;
+}
+
+/* Circle icon wrapper under image */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;  
+  transition: all 0.3s ease;
+  border: 2px solid #559bcc;
+}
+
+.icon-circle:hover {
+  background-color: #559bcc;
+  transform: scale(1.1);
+}
+
+/* FontAwesome icon */
+.icon-fa {
+  color: #559bcc;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover .icon-fa {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .softland-card {
+    width: 24rem;   /* responsive mein width thodi choti kar do */
+    height: auto;
+  }
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-fa {
+    font-size: 1.8rem;
+  }
+}
+.center-img {
+  max-width: 600px; /* ya jitna chaho */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.horizontal-card {
+  width: 25rem;
+  min-height: 15rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.712);
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.horizontal-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  background-color: #559bcc;
+  color: white; /* ensures text inside changes to white on hover */
+}
+
+/* Number style */
+.card-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #559bcc;
+  transition: all 0.3s ease;
+}
+
+.horizontal-card:hover .card-number {
+  color: white; /* hover color for number */
+}
+
+/* Title style */
+.horizontal-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.horizontal-card:hover .card-title {
+  color: white; /* hover color for title */
+}
+
+/* Text style */
+.horizontal-card .card-text {
+  color: silver;
+  transition: all 0.3s ease;
+}
+
+.horizontal-card:hover .card-text {
+  color: white; /* hover color for text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .horizontal-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
