@@ -69,8 +69,12 @@ const About = () => {
 
       {/* SoftLand Cards */}
       <div className="text-center my-5">
-        <h2>Save your time to using SoftLand</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <div className="text-center my-5 px-3">
+        <h2 className="fw-bold">Save your time to using SoftLand</h2>
+        <p className="text-muted">
+         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        </p>
+      </div>
 
         <div className="d-flex justify-content-center flex-wrap gap-4 mt-4">
           {softlandCards.map((card, index) => (

@@ -37,6 +37,7 @@ const NavbarComp = () => {
             <Nav.Link as={HashLink} smooth to="/#home">Home</Nav.Link>
             <Nav.Link as={HashLink} smooth to="/#about">About</Nav.Link>
             <Nav.Link as={HashLink} smooth to="/#features">Features</Nav.Link>
+            <Nav.Link as={HashLink} smooth to="/#gallery">Gallery</Nav.Link>
             <Nav.Link as={HashLink} smooth to="/#pricing">Pricing</Nav.Link>
             <NavDropdown title="More" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
