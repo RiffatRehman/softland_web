@@ -487,3 +487,128 @@
     margin-bottom: 20px;
   }
 }
+.pricing-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  padding: 40px 15px;       /* thoda vertical padding zyada, horizontal kam */
+  min-height: 500px;        /* card ki minimum height barhayi */
+  max-width: 350px;          /* card ki width kam ki */
+  margin: 0 auto;           /* center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* shadow effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+ 
+}
+
+
+.pricing-card:hover {
+  border-color: #559bcc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Circle icon */
+.plan-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background: #559bcc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.plan-icon:hover {
+  background: white;
+  color: #559bcc;
+  border: 1px solid #559bcc;
+}
+
+/* Price and duration */
+.price {
+  color: #559bcc;
+  font-weight: bold;
+}
+
+.duration {
+  color: silver;
+  font-size: 0.9rem;
+}
+
+/* Feature list */
+.feature-available {
+  color: #000;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-unavailable {
+  color: #999;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+ 
+ .buy-btn {
+  display: inline-block !important;
+  min-width: 120px !important;  /* button ki minimum width */
+   
+  margin: 0 auto !important;     /* center horizontally */
+  background-color: #fff !important; /* default background white */
+  color: #000 !important;           /* default text black */
+  border: 2px solid #000 !important; /* border */
+  border-radius: 25px !important;    /* rounded button */
+  font-weight: bold !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.buy-btn:hover {
+  background-color: #559bcc !important; /* hover background */
+  color: #fff !important;               /* hover text white */
+  border-color: #559bcc !important;     /* hover border color */
+}
+
+/* Style.css */
+.btn-hover:hover {
+  background-color: #1f548d !important;
+}
+.btn-hover:hover {
+          background-color: #1f548d!important;}
+              .icon-circle:hover {
+          background-color: #559bcc !important;
+          color: white!important;
+          cursor: pointer!important;
+        }
+
+
+         .social-icon:hover {
+          background-color: white;
+          color: #559bcc;
+          transform: scale(1.1);
+          text-decoration: none;}
+
+              .social-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #559bcc;
+          color: white;
+          font-size: 20px;
+          transition: all 0.3s ease;
+        }
